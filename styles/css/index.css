@@ -1,0 +1,66 @@
+@charset "UTF-8";
+.header {
+  box-shadow: 0 0 0.125rem 0.0625rem var(--dark-primary-shadow-color);
+}
+
+/*es para personalización de partes de web*/
+:root {
+  scroll-behavior: smooth;
+  --primary-max-width: 512px;
+  --primary-spacing: 1.5rem;
+  --primary-main-color: #149eca;
+  --primary-background-color: #16181d;
+  --secondary-backgroundd-color: #2b303b;
+  --primary-text-color: white;
+  --light-primary-shadow-color: rgba(0, 0, 0, 0.5);
+  --dark-primary-shadow-color: rgba(255, 255, 255, 0.5);
+  --primary-font-family: "Inconsolata", monospace;
+  /*actualizar de google fonts*/
+}
+
+@media (min-width: 768px) {
+  :root {
+    --primary-max-width: 1024px;
+    --primary-spacing: 2rem;
+  }
+}
+.body {
+  background-color: var(--primary-main-color);
+  margin: 0;
+  color: var(--primary-text-color);
+}
+
+.header-nav {
+  padding-top: var(--primary-spacing);
+  padding-bottom: var(--primary-spacing);
+  /*por nesting se abrevia así con &*/
+}
+.header-nav__logo {
+  background-color: red;
+}
+@media (min-width: 768px) {
+  .header-nav__logo {
+    background-color: royalblue;
+  }
+}
+.header-nav button {
+  background-color: royalblue;
+}
+@media (min-width: 768px) {
+  .header-nav button {
+    background-color: green;
+  }
+}
+
+button {
+  background-color: royalblue;
+}
+
+.container {
+  max-width: var(--primary-max-width)/2;
+  padding-right: 2rem/2;
+  padding-left: 2rem/2;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=index.css.map */

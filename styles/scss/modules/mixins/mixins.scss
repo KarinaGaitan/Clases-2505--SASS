@@ -1,0 +1,7 @@
+@mixin desktop {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+/*es para personalización de partes de web*/
